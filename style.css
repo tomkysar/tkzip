@@ -1,0 +1,161 @@
+body {
+  background-color: #fff;
+  color: #000;
+  font-family: 'Courier New', monospace;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 650px;
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+  margin-top: 2rem;
+}
+
+header {
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: normal;
+  margin: 0;
+}
+
+h1 a {
+  color: #000;
+  text-decoration: none;
+}
+
+h1 a:hover {
+  text-decoration: underline;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+}
+
+.avatar {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.social-links a {
+  color: #000 !important;
+  text-decoration: underline;
+  transition: transform 0.2s;
+}
+
+.social-links a:hover {
+  transform: scale(1.2);
+  color: #000 !important;
+}
+
+.social-links a i {
+  color: #000;
+}
+
+.section {
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.job, .project {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+.job-desc {
+  margin-left: 120px;
+  margin-bottom: 1.5rem;
+  max-width: 500px;
+  font-size: 0.95rem;
+}
+
+.company {
+  font-weight: bold;
+}
+
+.company, .project-name {
+  width: 120px;
+  flex-shrink: 0;
+}
+
+.period{
+  font-weight: bold;
+}
+.period, .project-desc {
+  flex-grow: 1;
+}
+
+.links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.links a {
+  color: #000;
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  margin-top: 0.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  .container {
+    padding: 1.5rem;
+  }
+  
+  .avatar {
+    width: 250px;
+    height: 250px;
+  }
+  
+  .job, .project {
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  
+  .job-desc {
+    margin-left: 0;
+    margin-bottom: 1.5rem;
+  }
+  
+  .company, .project-name {
+    width: auto;
+    margin-bottom: 0.2rem;
+  }
+} 
